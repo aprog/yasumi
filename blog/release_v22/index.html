@@ -9,7 +9,7 @@
 
     <meta property="og:title" content="Yasumi - An easy PHP Library for calculating national holidays">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/blog/release_v21">
+    <meta property="og:url" content="/blog/release_v22">
     <meta property="og:description" content="An easy PHP Library for calculating national holidays">
     <meta property="og:image" content="https://azuyalabs.github.io/yasumi/images/yasumi_logo.png">
     <meta property="og:image:type" content="image/png">
@@ -23,8 +23,8 @@
 
     <title>Yasumi - An easy PHP Library for calculating national holidays</title>
 
-    <link rel="home" href="/blog/release_v21">
-    <link rel="canonical" href="/blog/release_v21">
+    <link rel="home" href="/blog/release_v22">
+    <link rel="canonical" href="/blog/release_v22">
 
     <link rel="apple-touch-icon" sizes="180x180" href="https://azuyalabs.github.io/yasumi/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="https://azuyalabs.github.io/yasumi/favicons/favicon-32x32.png" sizes="32x32">
@@ -96,7 +96,7 @@
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column">
-                                            <h1 class="title is-2">Yasumi Release v2.1</h1>
+                                            <h1 class="title is-2">Yasumi Release v2.2</h1>
                                     </div>
             </div>
         </div>
@@ -112,13 +112,13 @@
                 <div class="level-item has-text-centered">
                     <div>
                         <p class="heading">Posted</p>
-                        <p class="title is-5">03/29/2019</p>
+                        <p class="title is-5">10/06/2019</p>
                     </div>
                 </div>
                 <div class="level-item has-text-centered">
                     <div>
                         <p class="heading">Length</p>
-                        <p class="title is-5">1 minute read</p>
+                        <p class="title is-5">2 minute read</p>
                     </div>
                 </div>
                 <div class="level-item has-text-centered">
@@ -132,47 +132,78 @@
 
             <hr>
 
-            <p>A couple of months after the successful v2 release, a new minor release is available as of today. Yasumi v2.1 addresses mostly a few issues for the Japan Holiday Provider and some other bug fixes.  </p>
+            <p>With the summer having come to an end, you may feel reinvigorated to give your <a href="https://www.php.net">PHP</a> project(s) a clean up. And why not upgrade Yasumi to the next version while you are at it? Because from today <a href="https://github.com/azuyalabs/yasumi/releases/tag/2.2.0">v2.2</a> is officially available!</p>
+<p>First of all, I wish to extend a huge thank you to <a href="https://github.com/c960657">Christian Schmidt</a> and <a href="https://github.com/pioc92">pioc92</a> as they have helped tremendously with numerous improvements and fixing several issues.</p>
+<p>And my gratitude does not stop there: I also want to thank everybody that has installed Yasumi as we have achieved over <strong>half a million</strong> installations!! Now I am really curious to see how fast we can get to the 1 million mark :)</p>
 <p><br></p>
-<h4>Japan</h4>
-<p>This year marks an important step for Japan as the Japanese Emperor will abdicate the throne on May 1st, 2019. As a result, the Emperors Birthday will change to February 23rd from 2020 onwards with no holiday celebrated in 2019. In addition, Coronation Day and the Enthronement Proclamation Ceremony are added to the holidays for 2019.</p>
-<p>With the coming <a href="https://tokyo2020.org/en/">2020 Tokyo Summer Olympics</a>, another change for Japan is the name of the original 'Health and Sports Day'. It has been decided to be simplified to 'Sports Day' from 2020 onwards.</p>
+<nav class="level">
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Supported Countries/Regions</p>
+            <p class="stats_value">120</p>
+        </div>
+    </div>
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Downloads</p>
+            <p class="stats_value">&gt;520K</p>
+        </div>
+    </div>
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Releases</p>
+            <p class="stats_value">14</p>
+        </div>
+    </div>
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Contributors</p>
+            <p class="stats_value">41</p>
+        </div>
+    </div>
+</nav>
+<p><br>
+Moving on to the good stuff...</p>
+<h4>New countries</h4>
+<p>In this version of Yasumi, 5 new countries are added: <strong>South Korea</strong>, <strong>England</strong>, <strong>Wales</strong>, <strong>Scotland</strong> and <strong>Northern Ireland</strong>. </p>
+<p>A few more countries and then Europe will be finally complete.</p>
+<p>Still, we are not there yet, with many more countries needing to be included. Adding these become more challenging as in some countries official holidays do not always follow a regular (arithmetic) pattern (Often due to a religious background or various undocumented governmental changes).  </p>
 <p><br></p>
-<h4>Other noteworthy changes</h4>
+<h4>Holidays</h4>
+<p>For the <strong>United Kingdom</strong>, the <em>Late Summer Bank Holiday</em> (prior 1965) has been added, with an additional fix for this holiday in 1968 and 1969. The <em>May Day Bank Holiday</em> in 1995 and 2020 and <em>Spring Bank Holiday</em> in 2002 and 2012 had a one-off exception, which has been incorporated now as well.</p>
+<p>Some holidays were classified incorrectly and have been rectified:</p>
 <ul>
-<li><a href="https://www.internationalwomensday.com/">International Women's Day</a> is an official holiday since 2019 in Berlin (Germany).</li>
-<li>Dutch spelling for Easter/Pentecost/Christmas to use lower case.</li>
-<li>Deprecation warning for the package mikey179/vfStream solved. Composer 2.0 requires package names to not contain any upper case characters.</li>
+<li><em>Corpus Christi</em> in <strong>Poland</strong></li>
+<li><em>Liberation Day</em> in the <strong>Netherlands</strong></li>
+<li><em>Good Friday</em> in <strong>Brazil</strong></li>
 </ul>
-<p>The entire v2.1.0 release notes can be found here: <a href="https://github.com/azuyalabs/yasumi/releases/tag/2.1.0">Yasumi v2.1.0</a> or check out the latest <a href="https://github.com/azuyalabs/yasumi/blob/develop/CHANGELOG.md">Changelog</a> for more details.</p>
+<p>And lastly, a fair number of translations have been added and fixed for the 'fr_FR' locale.</p>
+<p>Have a look at Yasumi's <a href="https://github.com/azuyalabs/yasumi/blob/develop/CHANGELOG.md">Changelog</a> if you want to see the complete list of changes, fixes, etc.</p>
 <p><br></p>
-<h4>Contributing</h4>
-<p>Contributions are encouraged and welcome; I am always happy to get feedback or pull requests on Github :) Create <a href="https://github.com/azuyalabs/yasumi/issues">Github Issues</a> for bugs and new features and comment on the ones you are interested in.</p>
-<p>If you enjoy what I am making, an extra cup of coffee is very much appreciated :). Your support helps me to put more time into Open-Source Software projects like this.</p>
-<p><a href="https://www.buymeacoffee.com/sachatelgenhof" target="_blank" rel="noreferrer"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;"></a></p>
+<h4>Documentation</h4>
+<p>The documentation overall has not changed much, however some background work in the way the pages are generated has been taken place.</p>
+<p>For creating the documentation pages, I am using Tighten's <a href="https://jigsaw.tighten.co">Jigsaw</a> - a static HTML generator -, and <a href="https://bulma.io">Bulma</a> for the styling. All of the generated HTML pages, CSS files, etc. are subsequently published to <a href="https://pages.github.com">Github Pages</a> with <a href="https://webpack.js.org">Webpack</a>.</p>
+<p>Since my local setup for the documentation site had become fairly unmanageable - with messy code, I took the time to do some serious cleanup and rework. You may not notice any of that, but I am now able to generate the pages faster and with less code to maintain :)</p>
 <p><br></p>
-<p>Want to thank again all those that have contributed to Yasumi this time. I hope you all enjoy this new release.</p>
+<h4>PHP 7.1</h4>
+<p>Be aware that active support for PHP 7.1 has ended already, with security support <a href="https://www.php.net/supported-versions.php">ending December 1st 2019</a>.
+This means that once PHP 7.1 reaches <a href="https://en.wikipedia.org/wiki/End-of-life_(product)">EOL</a>, Yasumi will also stop supporting 7.1 and increasing the minimum
+required PHP version to 7.2.</p>
+<p><br></p>
+<p>Again a big thank you to all those that have contributed and let's see how quickly we can get to <strong>1 million</strong> installations.</p>
 <p><img src="https://azuyalabs.github.io/yasumi/images/signature.png" alt="Sacha" title="Sacha"></p>
             <hr>
 
             <nav class="level">
-                                    <div class="level-item has-text-right">
+                                    <div class="level-item has-text-centered">
                         <div>
                             <p class="heading">Previous</p>
                             <p class="title is-6"><a
-                                        href="https://azuyalabs.github.io/yasumi//blog/release_v2">Welcome Yasumi version 2!</a>
+                                        href="https://azuyalabs.github.io/yasumi//blog/release_v21">Yasumi Release v2.1</a>
                             </p>
                         </div>
                     </div>
                 
-                                    <div class="level-item has-text-left">
-                        <div>
-                            <p class="heading">Next</p>
-                            <p class="title is-6"><a
-                                        href="https://azuyalabs.github.io/yasumi//blog/release_v22">Yasumi Release v2.2</a>
-                            </p>
-                        </div>
-                    </div>
                             </nav>
 
         </div>
